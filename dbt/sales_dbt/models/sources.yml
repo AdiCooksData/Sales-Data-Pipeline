@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: my_db  # The source name used in {{ source('my_db', ...) }}
+    database: my_db
+    schema: public
+    tables:
+      - name: dim_product
+      - name: dim_customer
+      - name: fact_sales
+      - name: dim_store
+      - name: dim_date

@@ -1,0 +1,12 @@
+sales_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: aditya
+      password: "3636"
+      port: 5432
+      dbname: my_db
+      schema: dbt_aditya # This is where your models will be built
+      threads: 4
