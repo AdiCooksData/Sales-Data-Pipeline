@@ -1,0 +1,1 @@
+SELECT * FROM {{source('my_db','dim_date')}}

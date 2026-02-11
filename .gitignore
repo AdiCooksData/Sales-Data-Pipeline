@@ -1,0 +1,4 @@
+echo ".venv/" >> .gitignore
+echo "target/" >> .gitignore
+echo "logs/" >> .gitignore
+# echo "profiles.yml" >> .gitignore 

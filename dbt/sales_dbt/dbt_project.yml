@@ -1,0 +1,12 @@
+name: 'sales_pipeline'
+version: '1.0.0'
+config-version: 2
+
+profile: 'sales_pipeline' # Links to your local credentials
+
+models:
+  sales_pipeline:
+    staging:
+      +materialized: view  # Staging should be fast and "light"
+    marts:
+      +materialized: table # Marts are "heavy" and used for reporting
